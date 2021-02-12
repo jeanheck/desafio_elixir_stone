@@ -1,13 +1,13 @@
-const MAX_AMOUNT = 100;
+import { CONFIGS } from "./configs.js";
 
 export function getRandomAmount () {
-  return Math.floor(Math.random() * MAX_AMOUNT) + 1;
+  return Math.floor(Math.random() * CONFIGS.MAX_AMOUNT) + 1;
 }
 export function parseToCents(price){
-  return parseInt(price) * 100;
+  return parseInt(price) * CONFIGS.ONE_REAL_IN_CENTS;
 }
 export function toCurrency(value){
-  return (value / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  return (value / CONFIGS.ONE_REAL_IN_CENTS).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 export function isEmptyArray(array){
   return !array || array === [] || array.length === 0;

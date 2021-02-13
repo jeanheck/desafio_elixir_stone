@@ -3,7 +3,7 @@
 
 Solution of the [challenge proposed](https://gist.github.com/programa-elixir/1bd50a6d97909f2daa5809c7bb5b9a8a) by [Stone](https://www.stone.com.br/) for the Elixir Training Program
 
-
+Note: This test wasn't subimitted to Stone. I just did it for fun, and to practice somethings : )
 
 ## Getting Started
 
@@ -24,9 +24,34 @@ At your terminal:
 ```
 
 ### To run the project
+
 ```
  node index.js
 ```
+
+### To run tests
+
+Tests in this project are using [Jest](https://jestjs.io/). To run, you just need to exec:
+
+```
+ npm test
+```
+
+### About the code
+
+I choose to use [Faker](https://github.com/marak/Faker.js/) to generate the lists of products and emails. Because that, you don't need to create the lists manually (but, if you want, you can).
+
+If you want to create products/emails list manually, you must follow this pattern:
+
+```
+ {
+   name: value,
+   amount: value,
+   price: value
+ }
+```
+
+The code is based on Brazilian Money. Because that, the ```price``` field must be a integer value, and converted in Cents, not in Real. For example, if the product price was R$ 10, you want to type 1000 in the price (because 100 cents are equivalent to 10 reais).
 
 ## Autor
 

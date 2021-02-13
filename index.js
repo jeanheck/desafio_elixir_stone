@@ -1,8 +1,8 @@
 import { Cart } from "./models/Cart.js";
 import { EmailFactory } from "./models/Email.js";
 import { ProductFactory } from "./models/Product.js";
-import { createList, toCurrency } from "./utils.js";
-import { CONFIGS } from "./constants.js";
+import { createList, toCurrency } from "./utils/utils.js";
+import { CONFIGS } from "./utils/constants.js";
 
 try {
   console.log('Loading data...');

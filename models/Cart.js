@@ -1,4 +1,4 @@
-import { isEmptyArray, toCurrency } from "../utils.js";
+import { isEmptyArray, toCurrency } from "../utils/utils.js";
 
 export class Cart {
   constructor(shopping_list, emails) {
@@ -11,14 +11,14 @@ export class Cart {
       }
       this.shopping_list = shopping_list; 
       this.emails = emails;
-      this.total = this.calculateTotal(this.shopping_list);
+      this.total = this.calculateTotal();
     }catch (error) {
       throw error;
     }
   }
 
-  calculateTotal(products){
-    return products.map((product) => { return product.amount * product.price})
+  calculateTotal(){
+    return this.shopping_list.map((product) => { return product.amount * product.price})
                     .reduce((total, current) => {return total += current});
   }
 

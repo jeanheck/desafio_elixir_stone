@@ -1,4 +1,4 @@
-import { getRandomAmount, parseToCents } from "../utils.js";
+import { getRandomAmount, parseToCents } from "../utils/utils.js";
 import faker from 'faker';
 
 class Product {

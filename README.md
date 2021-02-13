@@ -43,12 +43,36 @@ I choose to use [Faker](https://github.com/marak/Faker.js/) to generate the list
 
 If you want to create products/emails list manually, you must follow this pattern:
 
+For products:
+
 ```
- {
-   name: value,
-   amount: value,
-   price: value
- }
+ [
+   {
+     name: value,
+     amount: value,
+     price: value
+   },
+   {
+     name: value,
+     amount: value,
+     price: value
+   },
+   ...
+ ]
+```
+
+For emails:
+
+```
+ [
+   {
+     text: value
+   },
+   {
+     text: value
+   },
+   ...
+ ]
 ```
 
 The code is based on Brazilian Money. Because that, the ```price``` field must be a integer value, and converted in Cents, not in Real. For example, if the product price was R$ 10, you want to type 1000 in the price (because 100 cents are equivalent to 10 reais).

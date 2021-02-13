@@ -14,7 +14,7 @@ test('getRandomAmount -> check if return is a number, between 1 and 100', () => 
 });
 
 test('toCurrency -> format 19900 Cents in R$ 199,00', () => {
-  expect(encodeURIComponent(toCurrency(19900))).toEqual(encodeURIComponent('R$ 199,00'))
+  expect(encodeURIComponent(toCurrency(19900))).toEqual(encodeURIComponent('R$ 199.00'))
 });
 
 test('isEmptyArray -> check if array is true/false', () => {

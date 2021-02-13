@@ -81,11 +81,11 @@ The number of products and emails that will be used when you run ```node index.j
 
 The output of this project is all in terminal. When you run ```node index.js```, the layout of the result that you will see will be similar to that:
 
-
+![Screenshot](./docs/output_result.png)
 
 And if you run ```npm test```, the output will be similar to that:
 
-
+![Screenshot](./docs/output_test.png)
 
 That's all folks.
 

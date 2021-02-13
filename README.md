@@ -13,7 +13,7 @@ Instructions for preparing and using the developed app.
 
 What you need install to make it work:
 
-* NodeJS (I used the version 14.15.3, but the code is simple. Older/Newer versions can be work well)
+* NodeJS 13 or newer
 
 At your terminal:
 

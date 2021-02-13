@@ -3,7 +3,7 @@
 
 Solution of the [challenge proposed](https://gist.github.com/programa-elixir/1bd50a6d97909f2daa5809c7bb5b9a8a) by [Stone](https://www.stone.com.br/) for the Elixir Training Program
 
-Note: This test wasn't subimitted to Stone. I just did it for fun, and to practice somethings : )
+Note: This test wasn't submitted to Stone. I just did it for fun, and to practice somethings : )
 
 ## Getting Started
 

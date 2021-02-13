@@ -21,20 +21,22 @@ export class Cart {
     return this.shopping_list.map((product) => { return product.amount * product.price})
                     .reduce((total, current) => {return total += current});
   }
-
+  
   getTotalPerClient(){
     const quotient = Math.floor(this.total / this.emails.length);
-    const rest = this.total % this.emails.length;
-  
-    return this.emails.map((email, key, array) => {
-      let valueToPay = quotient;
+    let rest = this.total % this.emails.length;
+    let debts = this.emails.map((email) => {
+      return {email: email.text, debt: quotient}
+    });
 
-      //if exists remaind value, we sum it to the debt of the last customer
-      if (Object.is(array.length - 1, key)){  
-        valueToPay = rest === 0 ? quotient : quotient + rest;
+    debts.forEach(item => {
+      if(rest > 0){
+        item.debt += 1;
+        rest -= 1;
       }
+      item.debt = toCurrency(item.debt);
+    });
 
-      return {email: email.text, debt: toCurrency(valueToPay)};
-    })
+    return debts;
   }
 }

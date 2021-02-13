@@ -8,9 +8,15 @@ const products = [
   }
 ];
 const emails = [
-  {text: 'firstuser@gmail.com'},
-  {text: 'seconduser@gmail.com'},
-  {text: 'thirduser@gmail.com'}
+  {text: 'userNumberOne@gmail.com'},
+  {text: 'userNumberTwo@gmail.com'},
+  {text: 'userNumberThree@gmail.com'},
+  {text: 'userNumberFour@gmail.com'},
+  {text: 'userNumberFive@gmail.com'},
+  {text: 'userNumberSix@gmail.com'},
+  {text: 'userNumberSeven@gmail.com'},
+  {text: 'userNumberEight@gmail.com'},
+  {text: 'userNumberNine@gmail.com'}
 ];
 
 const cart = new Cart(products, emails);
@@ -31,6 +37,16 @@ test('Cart -> creating a new cart with acceptable lists', () => {
   expect(cart.total).toBe(400);
 });
 test('Cart -> getTotalPerClient -> divide value between the clients', () => {
-  const valueToPay = [{"debt": "R$ 1,33", "email": "firstuser@gmail.com"}, {"debt": "R$ 1,33", "email": "seconduser@gmail.com"}, {"debt": "R$ 1,34", "email": "thirduser@gmail.com"}];
-  expect(encodeURIComponent(cart.getTotalPerClient())).toStrictEqual(encodeURIComponent(valueToPay));
+  const valueToPay = [
+    {"debt": "R$ 0,45", "email": "userNumberOne@gmail.com"}, 
+    {"debt": "R$ 0,45", "email": "userNumberTwo@gmail.com"}, 
+    {"debt": "R$ 0,45", "email": "userNumberThree@gmail.com"},
+    {"debt": "R$ 0,45", "email": "userNumberFour@gmail.com"},
+    {"debt": "R$ 0,44", "email": "userNumberFive@gmail.com"},
+    {"debt": "R$ 0,44", "email": "userNumberSix@gmail.com"},
+    {"debt": "R$ 0,44", "email": "userNumberSeven@gmail.com"},
+    {"debt": "R$ 0,44", "email": "userNumberEight@gmail.com"},
+    {"debt": "R$ 0,44", "email": "userNumberNine@gmail.com"}
+  ];
+  expect(cart.getTotalPerClient()).toStrictEqual(valueToPay);
 });

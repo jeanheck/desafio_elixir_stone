@@ -18,12 +18,14 @@ What you need install to make it work:
 At your terminal:
 
 ```
-
  git clone https://github.com/jeanheck/desafio_elixir_stone
  cd desafio_elixir_stone
  npm install
- node index.js
+```
 
+### To run the project
+```
+ node index.js
 ```
 
 ## Autor

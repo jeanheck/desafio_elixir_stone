@@ -31,10 +31,6 @@ test('Cart -> creating a new cart with acceptable lists', () => {
   expect(cart.total).toBe(400);
 });
 test('Cart -> getTotalPerClient -> divide value between the clients', () => {
-  const valueToPay = [
-    {"debt": "R$ 1,33", "email": "firstuser@gmail.com"}, 
-    {"debt": "R$ 1,33", "email": "seconduser@gmail.com"}, 
-    {"debt": "R$ 1,34", "email": "thirduser@gmail.com"}
-  ];
-  expect(cart.getTotalPerClient()).toStrictEqual(valueToPay);
+  const valueToPay = [{"debt": "R$ 1,33", "email": "firstuser@gmail.com"}, {"debt": "R$ 1,33", "email": "seconduser@gmail.com"}, {"debt": "R$ 1,34", "email": "thirduser@gmail.com"}];
+  expect(encodeURIComponent(cart.getTotalPerClient())).toStrictEqual(encodeURIComponent(valueToPay));
 });

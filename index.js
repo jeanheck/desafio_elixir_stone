@@ -2,7 +2,7 @@ import { Cart } from "./models/Cart.js";
 import { EmailFactory } from "./models/Email.js";
 import { ProductFactory } from "./models/Product.js";
 import { createList, toCurrency } from "./utils.js";
-import { CONFIGS } from "./configs.js";
+import { CONFIGS } from "./constants.js";
 
 try {
   console.log('Loading data...');

@@ -3,6 +3,8 @@
 
 Solution of the [challenge proposed](https://gist.github.com/programa-elixir/1bd50a6d97909f2daa5809c7bb5b9a8a) by [Stone](https://www.stone.com.br/) for the Elixir Training Program
 
+
+
 ## Getting Started
 
 Instructions for preparing and using the developed app.
@@ -11,7 +13,7 @@ Instructions for preparing and using the developed app.
 
 What you need install to make it work:
 
-* NodeJS (I used the version 14.15.3, but the code is simple. Order/Newer versions can be work well)
+* NodeJS (I used the version 14.15.3, but the code is simple. Older/Newer versions can be work well)
 
 At your terminal:
 

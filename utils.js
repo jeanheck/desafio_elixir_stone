@@ -1,4 +1,4 @@
-import { CONFIGS } from "./configs.js";
+import { CONFIGS } from "./constants.js";
 
 export function getRandomAmount () {
   return Math.floor(Math.random() * CONFIGS.MAX_AMOUNT) + 1;

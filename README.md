@@ -77,6 +77,18 @@ For emails:
 
 The code is based on Brazilian Money. Because that, the ```price``` field must be a integer value, and converted in Cents, not in Real. For example, if the product price was R$ 10, you want to type 1000 in the price (because 100 cents are equivalent to 10 reais).
 
+The number of products and emails that will be used when you run ```node index.js``` are equal to the values in ```utils/constants.js```. The constants set some values used in some functions in this code. You can change this values to create greater or lower lists, but please don't overdo it.
+
+The output of this project is all in terminal. When you run ```node index.js```, the layout of the result that you will see will be similar to that:
+
+
+
+And if you run ```npm test```, the output will be similar to that:
+
+
+
+That's all folks.
+
 ## Autor
 
 * **Jean Carlos Heck** - [GitHub](https://github.com/jeanheck)

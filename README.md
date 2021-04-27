@@ -75,7 +75,7 @@ For emails:
  ]
 ```
 
-The code is based on Brazilian Money. Because that, the ```price``` field must be a integer value, and converted in Cents, not in Real. For example, if the product price was R$ 10, you want to type 1000 in the price (because 100 cents are equivalent to 10 reais).
+The code is based on Brazilian Money. Because that, the ```price``` field must be a integer value, and converted in Cents, not in Real. For example, if the product price was R$ 10, you want to type 1000 in the price (because 1000 cents are equivalent to 10 reais).
 
 The number of products and emails that will be used when you run ```node index.js``` are equal to the values in ```utils/constants.js```. The constants set some values used in some functions in this code. You can change this values to create greater or lower lists, but please don't overdo it.
 
